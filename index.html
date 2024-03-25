@@ -10,55 +10,93 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <main>
-      <div class="container">
-        <header class="d-flex justify-content-center py-5">
-          <ul class="nav nav-underline fs-5 list">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link active" aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-          </ul>
-        </header>
-      </div>
-      <div class="container col-xxl-8 px-5">
-        <div class="row flex-lg-row-reverse align-items-center g-1 py-3">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img
-              src="./images/hero_img.jpg"
-              class="d-block mx-lg-auto img-fluid"
-              alt="Bootstrap Themes"
-              loading="lazy"
-            />
+    <div class="container py-4">
+      <header class="d-flex justify-content-center text-center">
+        <ul class="nav nav-underline fs-5 list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Projects</a>
+          </li>
+
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </header>
+    </div>
+    <div class="container col-xxl-8 px-1">
+      <div class="row flex-lg-row-reverse align-items-center g-1 py-1">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./images/about_img.jpg"
+            alt="A man with a computer"
+            width="280"
+            height="320"
+            class="rounded-circle d-block mx-lg-auto my-2 hero_img"
+          />
+        </div>
+        <div class="col-lg-6 py-5">
+          <h1 class="display-4 fw-bold text-body-emphasis px-0 py-3">
+            Hi, I am <span class="text-primary name">Mateli Boniface</span>
+          </h1>
+          <p class="lead anime"></p>
+          <div class="d-md-flex justify-content-md-start">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg px-4 me-md-5 fw-bold hero_btn my-2"
+            >
+              Contact me
+            </button>
           </div>
-          <div class="col-lg-6 py-5">
-            <h1 class="display-4 fw-bold text-body-emphasis px-0 py-3">
-              Hi, I am <span class="text-primary name">Mateli Boniface</span>
-            </h1>
-            <p class="lead anime"></p>
-            <div class="d-md-flex justify-content-md-start">
+        </div>
+      </div>
+    </div>
+    <main>
+      <section id="about">
+        <div class="container py-3">
+          <h1 class="text-center fs-1 fw-bold about-header px-5">ABOUT ME</h1>
+          <div class="grid d-md-flex d-sm-block g-5">
+            <div class="col-md-4 col-lg-4 col">
+              <img
+                src="./images/hero_img.jpg"
+                class="d-sm-block"
+                alt="Bootstrap Themes"
+                loading="lazy"
+                height="400"
+              />
+            </div>
+            <div class="col-md-4 col-lg-4 col">
+              <p class="fs-5">
+                I'm a Fullstack web-developer and UI/UX designer based in Kenya,
+                currently I'm taking a course in fullstack web development
+                taught by Angela Yu. <br />
+                I enjoy coding and playing football a lot. I'm not a that of a
+                traveler but I love going to cool places. <br />To learn more
+                about me <i class="bi bi-arrow-down-square-fill"></i>
+              </p>
               <button
                 type="button"
-                class="btn btn-primary btn-lg px-4 me-md-5 fw-bold hero_btn"
+                class="btn btn-lg px-4 me-md-5 fw-bold abt_btn my-2"
               >
                 Contact me
               </button>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

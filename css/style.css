@@ -10,37 +10,65 @@ body {
   background-color: #fbf9ff;
   font-family: 'Libre Franklin', sans-serif;
 }
-
+header {
+  width: 90%;
+  position: fixed;
+  z-index: 99;
+}
+.hero_img {
+  position: relative;
+  top: 30px;
+}
 .name {
   font-family: 'Libre Baskerville', sans-serif;
 }
 
 .anime::before {
-  content: 'A full-stack developer and a tech entusiast';
-  animation: animate 8s infinite;
+  content: 'And a UI/UX designer based in Kenya';
+  animation: animate 15s infinite;
+  font-size: 16px;
+  font-weight: 700;
 }
+
 @keyframes animate {
   0% {
+    font-size: 100%;
     opacity: 1;
   }
   25% {
+    font-size: 70%;
     opacity: 0;
   }
   50% {
+    font-size: 100%;
     opacity: 1;
   }
   65% {
+    font-size: 70%;
     opacity: 1;
   }
   80% {
+    font-size: 100%;
     opacity: 0;
-    content: 'And a UI/UX designer based in Kenya';
+    content: 'A full-stack developer and a tech entusiast';
   }
   90% {
+    font-size: 70%;
     opacity: 0;
   }
   100% {
+    font-size: 100%;
     opacity: 1;
-    content: 'A full-stack developer and a tech entusiast';
   }
+}
+
+.about-header {
+  font-family: 'Libre Baskerville', sans-serif;
+  letter-spacing: 0.2rem;
+  color: blueviolet;
+}
+
+.abt_btn {
+  background-color: rgb(137, 74, 252);
+  color: white;
 }
